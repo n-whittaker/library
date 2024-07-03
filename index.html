@@ -45,12 +45,47 @@
             <input class="rating-input" type="range" name="rating" id="rating-input" min="0" max="5">
 
 
+            <input class="submit" type="submit">
+
+
+
+
 
         </form>
 
-        <div class="books">
+        <div class="books-container">
+
+            <div class="headings">
+                <p>Title</p>
+                <p>Author</p>
+                <p>Pages</p>
+                <p>Status</p>
+                <p>Rating</p>
+
+            </div>
+
+            <div class="books">
+
+                <div class="book-card">
+                    <h2 class="book-card-title">The Hobbit</h2>
+                    <h3 class="book-card-author">J. R. R. Tolkien</h3>
+                    <p class="book-card-pages">309</p>
+                    <button class="book-card-read">Read</button>
+                    <label>
+                        <input type="number" class="book-card-rating" placeholder="None" min="0" max="5">
+                    </label>
+                    <button class="remove-btn">Delete</button>
+
+                </div>
+
+
+
+
+
+            </div>
 
         </div>
+
 
     </div>
 </body>
