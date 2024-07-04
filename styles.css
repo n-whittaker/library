@@ -248,13 +248,16 @@ input[type="text"], input[type="number"] {
 
 .book-card-title {
     grid-area: title;
-    justify-self: center;
+    justify-self: start;
+    margin-left: 10px;
 
 }
 
 .book-card-author {
     grid-area: author;
-    justify-self: center;
+    justify-self: start;
+    margin-left: 10px;
+
 
 }
 
