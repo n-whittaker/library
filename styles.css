@@ -118,9 +118,9 @@ body {
 .radio-buttons {
     /*border: 1px solid black;*/
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 70%;  /* may need to change untis for responsiveness reasons */
+    width: 70%;
     max-width: 200px;
 }
 
