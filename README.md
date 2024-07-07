@@ -2,7 +2,6 @@
 
 Simple library app for keeping track of books.
 
+Add your book on the left, keep track of them on the right.
 
-
-RADIO BUTTON NEED TO BE CHANGED TO CHECKBBOX TO CHECK FOR CHECKED VALUE AS WELL AS BEING ABLE TO BE UNCHECKED, RADIO BUTTONS
-CAN"T BE UNCHECKED.
+CLick the status button on a book to change its status
