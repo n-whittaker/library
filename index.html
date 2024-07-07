@@ -16,34 +16,22 @@
 
         <form action="" class="form">
             <label class="title-input-label" for="title-input">Title</label>
-            <input class="title-input" type="text" name="title" id="title-input" placeholder="Title">
+            <input class="title-input" type="text" name="title" id="title-input" placeholder="Title" required>
 
             <label class="author-input-label" for="author-input">Author</label>
-            <input class="author-input" type="text" name="author" id="author-input"  placeholder="Author">
+            <input class="author-input" type="text" name="author" id="author-input"  placeholder="Author" required>
 
             <label class="pages-input-label" for="pages-input">Pages</label>
-            <input class="pages-input" type="number" name="pages" id="pages-input" min="1" placeholder="1">
+            <input class="pages-input" type="number" name="pages" id="pages-input" min="1" placeholder="1" required>
 
-            <label class="radio-buttons-label" for="radio-buttons">Read?</label>
-
-            <div class="radio-buttons" id="radio-buttons">
-
-                <div class="read-radio">
-                    <label for="read-input">I have read this book</label>
-                    <input class="read-input" type="radio" name="read" id="read-input" value="true">
-                </div>
-
-<!--                <div class="unread-radio">-->
-<!--                    <label for="unread-input">Unread</label>-->
-<!--                    <input class="unread-input" type="radio" name="unread" id="unread-input" value="false">-->
-<!--                </div>-->
-
+            <div class="status-check-container">
+                <label for="status-check">I have read this book</label>
+                <input type="checkbox" class="status-check" id="status-check" name="status-check" >
             </div>
 
             <label class="rating-input-label" for="rating-input">Rating:</label>
             <p class="rating-number">Slide to rate</p>
-            <input class="rating-input" type="range" name="rating" id="rating-input" min="0" max="5">
-
+            <input class="rating-input" type="range" name="rating" id="rating-input" min="0" max="5" disabled>
 
             <input class="submit" type="submit">
 
@@ -72,7 +60,7 @@
                     <p class="book-card-pages">309</p>
                     <button class="book-card-read">Read</button>
                     <label>
-                        <input type="number" class="book-card-rating" placeholder="None" min="0" max="5">
+                        <input type="number" class="book-card-rating" placeholder="None" min="0" max="5" value="3">
                     </label>
                     <button class="remove-btn">Delete</button>
 
@@ -84,7 +72,7 @@
                     <p class="book-card-pages">255</p>
                     <button class="book-card-read">Read</button>
                     <label>
-                        <input type="number" class="book-card-rating" placeholder="None" min="0" max="5">
+                        <input type="number" class="book-card-rating" placeholder="None" min="0" max="5" value="4">
                     </label>
                     <button class="remove-btn">Delete</button>
 
@@ -96,7 +84,7 @@
                     <p class="book-card-pages">419</p>
                     <button class="book-card-read">Read</button>
                     <label>
-                        <input type="number" class="book-card-rating" placeholder="None" min="0" max="5">
+                        <input type="number" class="book-card-rating" placeholder="None" min="0" max="5" value="5">
                     </label>
                     <button class="remove-btn">Delete</button>
 
@@ -107,8 +95,8 @@
                     <h3 class="book-card-author">Harper Lee</h3>
                     <p class="book-card-pages">263</p>
                     <button class="book-card-read">Read</button>
-                    <label>
-                        <input type="number" class="book-card-rating" placeholder="None" min="0" max="5">
+                    <label class="book-card-rating-label">
+                        <input type="number" class="book-card-rating" placeholder="None" min="0" max="5" value="3">
                     </label>
                     <button class="remove-btn">Delete</button>
 

@@ -115,21 +115,22 @@ body {
     visibility: hidden;
 }
 
-.radio-buttons {
-    /*border: 1px solid black;*/
+
+.status-check-container {
+    margin-top: 20px;
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    width: 70%;
-    max-width: 200px;
+    align-self: center;
+    height: 40px;
+    gap: 5%;
 }
 
-.read-radio, .unread-radio {
-    /*border: 1px solid black;*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.status-check-container > label {
+    align-self: center;
 }
+
+
 
 input[type="text"], input[type="number"], input[type="range"] {
     width: 80%;
@@ -236,12 +237,10 @@ input[type="text"], input[type="number"] {
 
 .book-card > label > input[type="number"] {
     display: inline;
-    border: 1px solid #bebebe;
     box-shadow: none;
     height: 20px;
     width: 50px;
-
-
+    text-align: center;
 }
 
 
@@ -282,10 +281,28 @@ input[type="text"], input[type="number"] {
     color: #8c8c8c;
 }
 
+.book-card-read.read {
+    background-color: #c3e8c3;
+}
+
+.book-card-read.unread {
+    background-color: #cecece;
+}
+
+
+
 .book-card-rating {
     grid-area: rating;
     justify-self: center;
+}
 
+.rating-number {
+    color: #b7b7b7;
+}
+
+
+input.book-card-rating {
+    border: none;
 }
 
 .remove-btn {
